@@ -53,7 +53,7 @@ export default function Home() {
     <main className="min-h-screen font-sans bg-[#FAF9F6] text-[#2D2A26] flex flex-col items-center pb-0 sm:pb-16 w-full overflow-x-hidden">
       
       {/* FULL WIDTH HERO IMAGE */}
-      <section className="relative w-full h-[45vh] sm:h-[55vh] min-h-[350px] sm:min-h-[400px] bg-stone-900 flex-shrink-0">
+      <section className="relative w-full h-[35vh] sm:h-[45vh] min-h-[300px] sm:min-h-[350px] bg-stone-900 flex-shrink-0">
         <div className="absolute inset-0 bg-stone-300 opacity-80" style={{ backgroundImage: "url('/hero.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-transparent"></div>
         
@@ -65,14 +65,14 @@ export default function Home() {
       {/* CENTERED CONTENT WRAPPER */}
       <div className="w-full max-w-[900px] bg-white sm:shadow-2xl relative z-20 flex flex-col sm:-mt-16 sm:rounded-sm">
         
-        <section className="pt-16 pb-14 px-6 sm:px-16 flex flex-col items-center text-center">
+        <section className="pt-12 pb-10 px-6 sm:px-16 flex flex-col items-center text-center">
           <h1 className="font-serif text-[30px] sm:text-[38px] tracking-widest uppercase mb-5 text-stone-900 font-semibold leading-snug">
             Sintered Stone & Porcelain Slabs
           </h1>
-          <p className="text-stone-600 text-[17px] sm:text-[18px] font-normal leading-relaxed mb-4 tracking-wide">
+          <p className="text-stone-700 text-[17px] sm:text-[18px] font-medium leading-relaxed mb-4 tracking-wide">
             Factory-direct supply from Argentina
           </p>
-          <p className="text-stone-600 text-[14px] sm:text-[15px] font-medium leading-relaxed mb-10 tracking-widest uppercase">
+          <p className="text-stone-700 text-[14px] sm:text-[15px] font-medium leading-relaxed mb-8 tracking-widest uppercase">
             <strong className="font-bold text-stone-900">European premium quality.</strong> <strong className="font-bold text-stone-900">Manufactured in Argentina.</strong>
           </p>
 
@@ -135,8 +135,8 @@ export default function Home() {
         <hr className="border-stone-100" />
 
         {/* DISTRIBUTION SECTION */}
-        <section className="py-20 px-6 sm:px-16 bg-[#FDFCFB]">
-          <div className="flex flex-col items-center text-center w-full mb-16">
+        <section className="py-14 px-6 sm:px-16 bg-[#FDFCFB]">
+          <div className="flex flex-col items-center text-center w-full mb-10">
             <h2 className="font-serif text-[26px] sm:text-[30px] tracking-[0.1em] uppercase mb-8 text-stone-900 font-semibold">
               Built for Industrial-Scale Supply
             </h2>
@@ -162,10 +162,10 @@ export default function Home() {
         <hr className="border-stone-100" />
 
         {/* BENEFITS SECTION */}
-        <section className="pt-16 pb-20 px-6 sm:px-16 flex flex-col items-center text-center sm:text-left sm:items-start bg-white">
-          <h2 className="font-serif text-[26px] sm:text-[30px] tracking-[0.1em] uppercase mb-12 text-stone-900 font-semibold w-full text-center md:text-left">
-            Why SPL
-          </h2>
+        <section className="pt-12 pb-14 px-6 sm:px-16 flex flex-col items-center text-center sm:text-left sm:items-start bg-white">
+          <div className="w-full flex justify-center md:justify-start mb-8 opacity-90">
+            <Image src="/spl-logo.png" alt="SPL Logo" width={600} height={225} className="h-[36px] sm:h-[44px] w-auto drop-shadow-sm brightness-0" />
+          </div>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
             
             {/* LEFT COLUMN */}
@@ -218,12 +218,12 @@ export default function Home() {
         <hr className="border-stone-100" />
 
         {/* SMARTER SOURCING SECTION */}
-        <section className="py-20 px-6 sm:px-16 bg-[#FDFCFB] flex flex-col items-center text-center w-full">
+        <section className="py-14 px-6 sm:px-16 bg-[#FDFCFB] flex flex-col items-center text-center w-full">
           <h2 className="font-serif text-[26px] sm:text-[30px] tracking-[0.1em] uppercase mb-10 text-stone-900 font-semibold">
             Smarter Sourcing for the US Market
           </h2>
           
-          <div className="max-w-[700px] text-stone-600 font-normal leading-relaxed text-[16px] sm:text-[17px] space-y-5 mb-16">
+          <div className="max-w-[700px] text-stone-600 font-normal leading-relaxed text-[16px] sm:text-[17px] space-y-5 mb-10">
             <p>Lower duties. Better margins. Stronger sourcing position.</p>
             <p>Argentina offers one of the most efficient sourcing structures available today.</p>
           </div>
@@ -268,44 +268,29 @@ export default function Home() {
         <hr className="border-stone-100" />
 
         {/* FINAL CTA SECTION */}
-        <section className="bg-white py-16 sm:py-24 px-6 sm:px-16 w-full">
-           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
-             
-             {/* DESKTOP IMAGE (LEFT) - hidden on mobile */}
-             <div className="hidden md:flex w-full justify-center md:justify-end">
-                <img 
-                  src="/cta.jpg" 
-                  alt="Coverings Las Vegas" 
-                  className="w-full h-auto object-contain rounded-[8px] shadow-md" 
-                />
-             </div>
-             
-             {/* TEXT CONTENT (RIGHT ON DESKTOP, TOP ON MOBILE) */}
-             <div className="flex flex-col items-center md:items-start text-center md:text-left w-full">
-               <h3 className="font-serif text-[26px] sm:text-[32px] tracking-widest text-stone-950 font-semibold mb-4 uppercase leading-snug">
-                 Meet Our Team at Coverings Las Vegas
-               </h3>
-               <p className="text-stone-700 text-[18px] sm:text-[20px] font-medium leading-relaxed mb-10 tracking-wide">
-                 Booth #313
-               </p>
-               <button
-                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                  className="btn-gold w-full sm:w-auto px-10 py-[16px] text-[14px] sm:text-[15px] tracking-wider font-semibold shadow-md hover:shadow-lg transition-all uppercase rounded-sm border border-[#8b714f]/30"
-                >
-                  Get Pricing & Supply Capabilities
-                </button>
-
-               {/* MOBILE IMAGE (BELOW BUTTON) - hidden on desktop */}
-               <div className="md:hidden w-full mt-10 flex justify-center">
-                  <img 
-                    src="/cta.jpg" 
-                    alt="Coverings Las Vegas" 
-                    className="w-full h-auto object-contain rounded-[8px] shadow-md" 
-                  />
-               </div>
-             </div>
-             
-           </div>
+        <section className="relative w-full py-24 sm:py-32 px-6 sm:px-16 flex flex-col items-center justify-center text-center overflow-hidden sm:rounded-b-sm">
+          {/* Background Image & Overlay */}
+          <div 
+            className="absolute inset-0 z-0 bg-stone-900" 
+            style={{ backgroundImage: "url('/hero.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+          ></div>
+          <div className="absolute inset-0 z-0 bg-black/40"></div>
+          
+          {/* Content */}
+          <div className="relative z-10 flex flex-col items-center w-full max-w-[600px]">
+            <h3 className="font-serif text-[28px] sm:text-[34px] tracking-widest text-[#FAF9F6] font-semibold mb-4 uppercase leading-snug drop-shadow-md">
+              Meet Our Team at Coverings Las Vegas
+            </h3>
+            <p className="text-stone-200 text-[18px] sm:text-[20px] font-medium leading-relaxed mb-10 tracking-widest drop-shadow-sm uppercase">
+              Booth #313
+            </p>
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="btn-gold w-full sm:w-auto px-10 py-[16px] text-[14px] sm:text-[15px] tracking-wider font-semibold shadow-lg hover:shadow-xl transition-all uppercase rounded-sm border border-white/20"
+            >
+              Get Pricing & Supply Capabilities
+            </button>
+          </div>
         </section>
 
       </div>
